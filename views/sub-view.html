@@ -1,0 +1,28 @@
+
+<div class="side-nav" ng-class="expandedNav === true ? 'side-nav-expanded' : false">
+  <div class="nav-box">
+    <menu-item bound-name="{{item.href}}" index="{{$index}}" class="menu-item" ng-repeat="item in pageData"></menu-item>
+    <div class="get-assets-box">
+        <p class="get-assets-text"></p>
+        <img src="" alt="" class="get-assets-icon">
+    </div>
+  </div>
+</div>
+
+<div class="content-box">
+  <div id="{{group.href}}" index="{{$index}}" class="content-group" ng-repeat="group in pageData">
+    <h1 class="group-name">{{group.name}}</h1>
+
+    <div ng-if="group.description" class="indent-medium"></div>
+
+    <p class="group-description">{{group.description}}</p>
+
+    <div class="indent-medium"></div>
+
+    
+    <div id="{{block.href}}" index="{{$index}}" class="content-block" ng-repeat="block in group.links">
+      <div class="content" ng-include="block.templateUrl"></div>
+    </div>
+  </div>
+</div>
+

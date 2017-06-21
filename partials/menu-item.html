@@ -1,0 +1,9 @@
+<a href="" class="anchor-heading" ng-click="expandCollapseMenuItem(!isMenuItemCollapsed); setStaticHeight()">{{item.name}}</a>
+<div class="anchor-box-var" ng-style="{ 'height' : isMenuItemCollapsed ?'0px' : staticHeight + 'px' }">
+    <div class="anchor-box-static">
+        <link-item index="{{$index}}" bound-name="{{link.href}}" ng-click="scrollToAnchor(link.href); collapseNav()"  ng-repeat="link in item.links" class="anchor-box">
+            <a ng-style="{ 'color' : isBlockActive ? themeColor : 'black' }" href="" class="anchor-link">{{link.name}}</a> 
+        </link-item>
+    </div>
+</div>
+

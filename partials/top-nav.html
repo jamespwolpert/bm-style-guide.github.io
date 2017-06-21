@@ -1,0 +1,12 @@
+<img class="logo-desktop" ng-src="./dist/resources/icons/{{themes.activeTheme.logoWordMark}}" alt="">
+<img class="logo-mobile" ng-src="./dist/resources/icons/{{themes.activeTheme.logoThumb}}" alt="">
+
+<div class="link-box">
+    <label ng-repeat="theme in themes.themeList" ng-class=" setActive(theme) ? theme.activeClass : 'inactive'">
+        <input type="radio" ui-sref="{{theme.link}}" ng-checked="setActive(theme)" ng-model="themes.themesList" ></input>
+        {{theme.name}}</label>
+</div>
+
+<img ng-src="./dist/resources/icons/{{themes.activeTheme.hamburger}}" ng-click="expandedNav = !expandedNav" alt="" class="hamburger">
+
+
