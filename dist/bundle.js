@@ -55151,7 +55151,7 @@ angular.module("styleGuide")
 
         restrict: 'E',
 
-        templateUrl: '/partials/top-nav.html',
+        templateUrl: './partials/top-nav.html',
 
         link: postlink
 

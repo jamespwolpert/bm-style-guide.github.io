@@ -53,15 +53,15 @@
 
 @font-face {
   font-family: 'Radikal';
-  src: url("/dist/resources/fonts/radikal-medium.otf"); }
+  src: url("./resources/fonts/radikal-medium.otf"); }
 
 @font-face {
   font-family: 'Core Sans';
-  src: url("/dist/resources/fonts/core-sans-regular.otf"); }
+  src: url("./resources/fonts/core-sans-regular.otf"); }
 
 @font-face {
   font-family: 'Core Sans Med';
-  src: url("/dist/resources/fonts/core-sans-med.otf"); }
+  src: url("./resources/fonts/core-sans-med.otf"); }
 
 div.login-view {
   position: fixed;
